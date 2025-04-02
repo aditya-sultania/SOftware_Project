@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login - Polling Booth System</title>
+  <link rel="stylesheet" href="login.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <div class="logo-container">
+        <img src="./images/images.png" alt="Logo" class="logo"> 
+        <h1>Polling Booth System</h1>
+      </div>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="login.html" class="active">Login</a></li>
+        <li><a href="signup.html">Signup</a></li>
+        <li><a href="about.html">About</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="form-container">
+      <section class="login-section">
+        <h2>Login</h2>
+        <form action="authenticate.php" method="POST">
+          <div class="form-group">
+            <label for="voter_id">Voter ID</label>
+            <input type="text" id="voter_id" name="voter_id" placeholder="Enter Voter ID" required>
+          </div>
+
+          <div class="form-group">
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" placeholder="Enter your password" required>
+          </div>
+
+          <div class="form-group">
+            <label for="role">Login as:</label>
+            <select id="role" name="role" required>
+              <option value="user">User</option>
+              <option value="admin">Admin</option>
+            </select>
+          </div>
+
+          <button type="submit" class="btn">Login</button>
+        </form>
+
+        <p>Don't have an account? <a href="signup.html">Signup here</a>.</p>
+      </section>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Polling Booth System | Secure and Simple Voting!</p>
+  </footer>
+</body>
+</html>
